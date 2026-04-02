@@ -1,3 +1,38 @@
+# 🗄️ DataProject | Lógica: Consultas de SQL
+
+## 📖 Descripción 
+
+Este proyecto resuelve una serie de consultas de SQL planteadas sobre una base de datos de una tienda de películas ficticia (BBDD_Proyecto_shakila_sinuser.sql). El objetivo es poner en práctica los conocimientos adquiridos en el **Módulo 5: SQL** del máster **Data & Analytics V3** de **thePower**.
+
+Las consultas pueden abordarse desde distintos enfoques para alcanzar los mismos resultados. Sin embargo, para cumplir con los requisitos del proyecto, es necesario demostrar los siguientes conocimientos:
+
+- Manejo de la herramienta DBeaver.
+- Creación del esquema de la BBDD.
+- Manejo de las consultas con una sola tabla de la BBDD.
+- Manejo de las relaciones entre tablas.
+- Manejo de las subconsultas.
+- Manejo de vistas.
+- Manejo de estructuras de datos temporales.
+- Uso de buenas prácticas, especialmente:
+   - Escribir los comandos en mayúsculas.
+   - Finalizar las consultas con “;”.
+   - Utilizar comillas dobles para nombres de tablas y columnas.
+   - Evitar el uso de `*` en SELECT de forma general, especificando únicamente las columnas necesarias.
+   - Incluir comentarios en el código que faciliten su comprensión. **Dado el carácter académico de este proyecto, se ha puesto especial énfasis en este punto.** 
+- Entendimiento del resultado de las consultas.
+- Correcta entrega en GitHub, incluyendo un archivo README cuya elaboración se recomienda realizar siguiendo las indicaciones de la “guía para escribir un buen README en nuestros proyectos” (guia_readme.pdf).
+
+
+ 
+
+
+
+
+
+
+
+
+
 # 🗄️ DataProject | Lógica. Consultas de SQL
 <br>
 
