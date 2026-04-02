@@ -2,7 +2,7 @@
 
 ## 📖 Descripción 
 
-Este proyecto resuelve una serie de consultas de SQL planteadas sobre una base de datos de una tienda de películas ficticia (BBDD_Proyecto_shakila_sinuser.sql). El objetivo es poner en práctica los conocimientos adquiridos en el **Módulo 5: SQL** del máster **Data & Analytics V3** de **thePower**.
+Este proyecto resuelve una serie de consultas de SQL planteadas sobre una base de datos de una tienda de películas ficticia (`BBDD_Proyecto_shakila_sinuser.sql`). El objetivo es poner en práctica los conocimientos adquiridos en el **Módulo 5: SQL** del máster **Data & Analytics V3** de **thePower**.
 
 Las consultas pueden abordarse desde distintos enfoques para alcanzar los mismos resultados. Sin embargo, para cumplir con los requisitos del proyecto, es necesario demostrar los siguientes conocimientos:
 
@@ -17,13 +17,29 @@ Las consultas pueden abordarse desde distintos enfoques para alcanzar los mismos
    - Escribir los comandos en mayúsculas.
    - Finalizar las consultas con “;”.
    - Utilizar comillas dobles para nombres de tablas y columnas.
-   - Evitar el uso de `*` en SELECT de forma general, especificando únicamente las columnas necesarias.
+   - Evitar el uso de `*` en SELECT de forma generalizada, especificando únicamente las columnas necesarias.
    - Incluir comentarios en el código que faciliten su comprensión. **Dado el carácter académico de este proyecto, se ha puesto especial énfasis en este punto.** 
 - Entendimiento del resultado de las consultas.
-- Correcta entrega en GitHub, incluyendo un archivo README cuya elaboración se recomienda realizar siguiendo las indicaciones de la “guía para escribir un buen README en nuestros proyectos” (guia_readme.pdf).
+- Correcta entrega en GitHub, incluyendo un archivo README cuya elaboración se recomienda realizar siguiendo las indicaciones de la “guía para escribir un buen README en nuestros proyectos” (`guia_readme.pdf`).
+
+## 🛠️ Instalación y requisitos
+
+### Requisitos previos
+
+Para poder ejecutar este proyecto es necesario contar con las siguientes herramientas y archivos:
+- PostgreSQL.
+- DBeaver.
+- Base de datos: `BBDD_Proyecto_shakila_sinuser.sql`
+- Enunciado del proyecto: `EnunciadoDataProject_SQL.Lógica.pdf`
+
+### Instalación y configuración
+
+1. Abrir DBeaver, seleccionar "postgres" e introducir la contraseña para realizar la conexión (el icono de postgres debe quedar marcado con un tic verde).
+2. Importar la base de datos sobre la que se va a trabajar haciendo uso del archivo `BBDD_Proyecto_shakila_sinuser.sql` y seleccionarla con la opción "Establecer por defecto" (el nombre de la base de datos debe quedar destacado en negrita).
+
+Tras completar estos pasos, el entorno estará listo para abrir los archivos del proyecto y ejecutar las consultas propuestas.
 
 
- 
 
 
 
