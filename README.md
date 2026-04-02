@@ -24,6 +24,26 @@ Las consultas pueden abordarse desde distintos enfoques para alcanzar los mismos
 - Correcta entrega en GitHub, incluyendo un archivo README cuya elaboración se recomienda realizar siguiendo las indicaciones de la “guía para escribir un buen README en nuestros proyectos” (`guia_readme.pdf`).
 
 
+## 🗂️ Estructura del Proyecto
+```
+├── data/                                         # Carpeta con la base de datos del proyecto
+│    └── BBDD_Proyecto_shakila_sinuser.sql          # Base de datos del proyecto
+│
+├── queries/                                      # Carpeta con los resultados principales del proyecto
+│    └── da_proyecto_sql_arb.sql                    # Archivo con todas las consultas SQL resueltas  
+│
+├── schema/                                       # Carpeta con el modelo entidad relación de la base de datos
+│    ├── esquema_er_shakila.erd                     # Archivo .erd con el modelo entidad relación de la base de datos
+│    └── esquema_er_shakila.png                     # Archivo .png con el modelo entidad relación de la base de datos
+│
+├── docs/                                         # Carpeta con la documentación adicional del proyecto
+│    ├── EnunciadoDataProject_SQL.Lógica.pdf        # Enunciado del proyecto
+│    └── guia_readme.pdf                            # Guía con indicaciones para redactar un archivo README  
+│
+└── README.md                                     # Descripción del proyecto
+```
+
+
 ## 🛠️ Instalación y requisitos
 
 ### Requisitos previos
@@ -73,68 +93,3 @@ Sin embargo, las propuestas de mejora son bienvenidas. Si deseas mejorar el proy
 ## ✒️ Autores y agradecimientos
 
 **Autor:** Antonio Rojas Boquizo
-
-
-
-
-# 🗄️ DataProject | Lógica. Consultas de SQL
-<br>
-
-## 📖 Descripción
-Este proyecto tiene como objetivo la resolución de una serie de consultas de SQL planteadas para poner en práctica los conocimientos adquiridos en el Módulo 5: SQL del máster Data & Analytics V3 de thePower. 
-
-Para ello, se ha trabajado con una base de datos de una tienda de películas ficticia (Shakila) y se han tenido en cuenta las especificaciones recogidas en la lección “Lógica: Consultas de SQL”. 
-
-## 🗂️ Estructura del proyecto
-```
-├── Enunciado del proyecto                           # Enunciado del proyecto <br> 
-├── BBDD inicial del proyecto                          # Enunciado del proyecto <br> 
-├── Guía de un buen README                           # Enunciado del proyecto <br>
-├── Resultado del proyecto                             # Enunciado del proyecto <br>
-├── Esquema de la BBDD del proyecto (ejercicio 1)    # Enunciado del proyecto <br>
-└── README.md	Descripción del proyecto               # Enunciado del proyecto <br>
-```
-
-## 📋 Requisitos del proyecto
-Las consultas pueden efectuarse de diferentes formas. No obstante, para cumplir con los criterios del proyecto, es fundamental demostrar los siguientes conocimientos: 
-- Manejo de la herramienta DBeaver.
-- Archivo del esquema de la BBDD.
-- Manejo de las consultas con una sola tabla de la BBDD.
-- Manejo de las relaciones entre tablas.
-- Manejo de las subconsultas.
-- Manejo de vistas.
-- Manejo de estructuras de datos temporales.
-- Entendimiento del resultado de las consultas
-- Correcta entrega en GitHub
-- Buenas prácticas, particularmente:
-
-  - Escribir los comandos en mayúsculas
-  - Finalizar las consultas con “;”
-  - Utilizar comillas dobles para nombres de tablas y columnas
-  - Evitar usar * en SELECT, especificando en su lugar solo las columnas necesarias. 
-  - Incluir en el código comentarios que faciliten su comprensión. **Dado el carácter académico de este proyecto, se ha puesto especial énfasis en este punto.** 
-
-Respecto a la elaboración de este documento (README), se han seguido las indicaciones incluidas en la “guía para escribir un buen readme en nuestros proyectos”.
-
-## 🛠️ Instalación y configuración
-Este proyecto requiere el empleo de las siguientes herramientas:
-- PostgreSQL.
-- DBeaver.
-  
-Además, también se necesita la siguiente base de datos:
-- shakila.
-
-## 📊 Resultados y conclusiones
-El presente proyecto consiste en resolver una lista de consultas individuales para demostrar los conocimientos de SQL adquiridos a lo largo de la formación. 
-De este modo, no se obtienen resultados cuantitativos del ejercicio ni conclusiones que pudiesen ser útiles para posibles tomadores de decisiones. 
-
-## 🔄 Próximos pasos
-- Proyecto completo, no se encuentra en desarrollo.
-- Dado que el proyecto está diseñado para demostrar los conocimientos adquiridos en SQL, puede resultar interesante replantear las consultas, especialmente aquellas de mayor complejidad, para alcanzar los mismos resultados a través de un código distinto.
-
-## 🤝 Contribuciones
-Este proyecto forma parte de la evaluación individual de un máster en análisis de datos. <br> 
-No se aceptan contribuciones externas, pero eres libre de explorar el código y aprender de él.
-
-## ✒️ Autores y agradecimientos
-- Antonio Rojas Boquizo
