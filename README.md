@@ -55,10 +55,24 @@ Entre los principales resultados logrados destacan:
 -	La puesta en valor de la importancia de estructurar correctamente las consultas y documentar el código, especialmente en contextos académicos o colaborativos, donde la claridad es un aspecto fundamental.
 
 
+## 🔄 Próximos pasos
+
+El proyecto cumple con los requisitos establecidos. No obstante, considerando el contexto formativo en el que se enmarca, se sugieren las siguientes líneas de ampliación que podrían desarrollarse en el futuro:
+-	Optimizar algunas consultas para mejorar su rendimiento.
+-	Explorar diferentes enfoques para resolver una misma consulta y comparar su eficiencia. 
+-	Ampliar el análisis de la base de datos con nuevas consultas no contempladas en el enunciado.  
 
 
+## 🤝 Contribuciones
+
+El presente proyecto ha sido desarrollado como parte de un ejercicio académico, por lo que no se esperan contribuciones externas.
+
+Sin embargo, las propuestas de mejora son bienvenidas. Si deseas mejorar el proyecto, por favor abre un pull request o una issue. 
 
 
+## ✒️ Autores y agradecimientos
+
+**Autor:** Antonio Rojas Boquizo
 
 
 
