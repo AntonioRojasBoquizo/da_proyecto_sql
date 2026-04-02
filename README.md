@@ -24,6 +24,26 @@ Las consultas pueden abordarse desde distintos enfoques para alcanzar los mismos
 - Correcta entrega en GitHub, incluyendo un archivo README cuya elaboración se recomienda realizar siguiendo las indicaciones de la “guía para escribir un buen README en nuestros proyectos” (`guia_readme.pdf`).
 
 
+## 🗂️ Estructura del Proyecto
+```
+├── data/                                         # Carpeta con la base de datos del proyecto
+│    └── BBDD_Proyecto_shakila_sinuser.sql          # Base de datos del proyecto
+│
+├── queries/                                      # Carpeta con los resultados principales del proyecto
+│    └── da_proyecto_sql_arb.sql                    # Archivo con todas las consultas SQL resueltas  
+│
+├── schema/                                       # Carpeta con el modelo entidad relación de la base de datos
+│    ├── esquema_er_shakila.erd                     # Archivo .erd con el modelo entidad relación de la base de datos
+│    └── esquema_er_shakila.png                     # Archivo .png con el modelo entidad relación de la base de datos
+│
+├── docs/                                         # Carpeta con la documentación adicional del proyecto
+│    ├── EnunciadoDataProject_SQL.Lógica.pdf        # Enunciado del proyecto
+│    └── guia_readme.pdf                            # Guía con indicaciones para redactar un archivo README  
+│
+└── README.md                                     # Descripción del proyecto
+```
+
+
 ## 🛠️ Instalación y requisitos
 
 ### Requisitos previos
