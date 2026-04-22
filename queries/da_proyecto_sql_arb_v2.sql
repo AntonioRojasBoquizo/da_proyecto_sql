@@ -507,16 +507,16 @@ Obtener todas las películas que tenemos y todos los registros de alquiler.
 SELECT 		f."title" 				AS "titulo_pelicula",			-- Esta consulta selecciona las columnas que contienen el título de las películas de la tabla "film",		
 			i."inventory_id" 		AS "identificador_inventario",		-- el id de inventario de la tabla "inventory" (para poder diferenciar entre diferentes copias de la misma película)
 			r."rental_id" 			AS "identificador_alquiler"			-- y el id de alquiler de la tabla "rental".
-FROM		"inventory" 	AS i									-- Se trabaja con la tabla que resulta de la intersección de la tabla "inventory"
-INNER JOIN	"film"		 	AS f										-- con la tabla "film" 
-	ON		i."film_id" = f."film_id"									-- relacionando la columna "film_id" de la tabla "inventory" y la columna "film_id" de la tabla "film"
-INNER JOIN 	"rental" 		AS r										-- más la intersección con la tabla "rental"
+FROM		"film" 			AS f									-- Se trabaja con la tabla que resulta de considerar la tabla "film" al completo (para que aparezcan todas las películas)
+FULL JOIN	"inventory"		AS i										-- más la intersección con la tabla "inventory" al completo 
+	ON		f."film_id" = i."film_id"									-- relacionando la columna "film_id" de la tabla "film" y la columna "film_id" de la tabla "inventory"
+FULL JOIN 	"rental" 		AS r										-- más la intersección con la tabla "rental" al completo (para que aparezcan todos los alquileres)
 	ON		i."inventory_id" = r."inventory_id"							-- relacionando la columna "inventory_id" de la tabla "inventory" y la columna "inventory_id" de la tabla "rental".
 ORDER BY 	f."title",												-- Se ordenan los resultados por título de película de forma ascendente (orden alfabético),
 			i."inventory_id",											-- a continuación, se ordenan según el id de inventario de forma ascendente
 			r."rental_id";												-- y, por último, se ordenan según el id de alquiler de forma ascendente.
 				
-			
+					
 /*
 ========================================
 CONSULTA 34
@@ -993,16 +993,16 @@ INNER JOIN 	"film_category" 	AS fc								-- más la intersección con la tabla 
 INNER JOIN 	"category" 			AS c 								-- más la intersección con la tabla "category"
 	ON 		fc."category_id" = c."category_id"						-- relacionando la columna "category_id" de la tabla "film_category" y la columna "category_id" de la tabla "category".
 )
-SELECT DISTINCT 	apc_1."nombre_actor",						-- A continuación, se seleccionan los resultados únicos (no duplicados) de las columnas que contienen el nombre de actor 
+SELECT DISTINCT 	apc_1."id_actor",							-- A continuación, se seleccionan los resultados únicos (no duplicados) de la columnas que contienen el id de actor,
+					apc_1."nombre_actor",							-- el nombre de actor 
 					apc_1."apellido_actor"							-- y el apellido de actor.
 FROM		"actor_pelicula_categoria" AS apc_1					-- Se trabaja con la CTE creada inicialmente ("actor_pelicula_categoria")
 WHERE NOT EXISTS (												-- Se filtran los datos para considerar solo los resultados donde no exista ningún registro que cumpla la siguiente subconsulta:
 	SELECT 1																-- Subconsulta
 	FROM 	"actor_pelicula_categoria" AS apc_2								-- Se trabaja con la CTE creada inicialmente ("actor_pelicula_categoria")
-	WHERE 	apc_2."nombre_actor" = apc_1."nombre_actor"						-- Se filtran los datos para garantizar que para un mismo nombre de actor
-	AND		apc_2."apellido_actor" = apc_1."apellido_actor"					-- y un mismo apellido de actor
+	WHERE 	apc_2."id_actor" = apc_1."id_actor"								-- Se filtran los datos para garantizar que para un mismo actor (identificado mediante su id)
 	AND		LOWER(apc_2."categoria_pelicula") = LOWER('Music'))				-- alguna de las películas en las que ha participado pertenece a la categoría "Music". 
-ORDER BY	apc_1."nombre_actor";								-- Se ordenan los resultados según el nombre de actor de forma ascendente (orden alfabético).
+ORDER BY	apc_1."id_actor";									-- Se ordenan los resultados según el id de actor de forma ascendente.
 
 
 /*
